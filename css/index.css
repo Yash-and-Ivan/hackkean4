@@ -1,0 +1,302 @@
+html {
+  overflow: hidden;
+}
+#bgSketch1 {
+  z-index: 1;
+}
+#op1, #op2, #op3, #op4 {
+  font-size: 20px;
+  width: 10%;
+}
+
+#panel1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  background: white;
+  border-width: 1px;
+  border-color: rgb(9, 102, 175);
+  border-style: solid;
+  box-sizing: border-box;
+}
+#titlepanel2{
+  font-weight: 1000;
+  font-size: 60px;
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+#panel2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  background: white;
+}
+#panel3 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 200%;
+  background: white;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  box-sizing: border-box;
+}
+.articlePanel button {
+  position: relative;
+  left: 10%;
+}
+#panel4 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 300%;
+  background: rgb(73, 167, 240);
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  box-sizing: border-box;
+
+}
+.questionArea h4 {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 20px;
+}
+
+.questionArea {
+  width: 37.5%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  box-sizing: border-box;
+  background: rgba(240, 240, 240, 1)
+}
+
+.userText .userPad {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.userText {
+  width: 31.125%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  box-sizing: border-box;
+  background: rgb(240, 240, 240, 1);
+}
+
+.rainbow {
+  animation-name: rainbow;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+@keyframes rainbow {
+  25% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  0% {
+    color: orange;
+  }
+}
+
+.titlePanel h2 {
+  margin-top: 10%;
+}
+
+.titlePanel button {
+  margin-bottom: 20%;
+}
+
+.titlePanel p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.titlePanel img {
+  width: 50%;
+  top: 20%;
+  left: 50%;
+  margin-top: 10%;
+  margin-bottom: 20%:
+}
+.quote mark {
+  background-color: yellow;
+}
+.titlePanel {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: block;
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 33.33%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(220, 220, 220, 0.75);
+  z-index: 1000 !important;
+}
+.quote {
+  font-size: 26px;
+  position: absolute;
+  font-weight: bolder;
+  color: white;
+  top: 50%;
+  left: 66.66%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+}
+/* Hide the browser's default radio button */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.left-column {
+  position: absolute;
+  width: 40%;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+
+.right-column {
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+#mcForm {
+  position: relative;
+  top: -5%;
+}
+.userTextArea {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  width: 90%;
+  height: 80%;
+  background-color: rgba(240, 240, 240, 1) !important;
+  border: none;
+  resize: none;
+  overflow: auto;
+  outline: none;
+  box-shadow: none;
+}
+.userTextArea:hover {
+  border: none;
+}
+#agr0 {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+}
+#agr3 {
+  position: absolute;
+  top: 90%;
+  transform: translate(-50%, -50%)
+}
+#agr1, #agr2, #agr3 {
+  opacity: 0
+}
+#questionSubmit {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%)
+}
+.resultsPanel {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  width: 90%;
+  height: 80%;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  background: white;
+}
+.articlePanel {
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  left: 50%;
+  width: 40%;
+  height: 70%;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  background: rgb(240, 240, 240);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.article {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  transition-duration: 0.5;
+}
+.article:hover {
+  margin-top: 2%;
+  margin-bottom: 2%;#
+  margin-left: 2%;
+  margin-right: 2%;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  background: rgb(250, 250, 250);
+  transition-duration: 1s;
+}
+.article h4 {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 100%;
+  font-size: 25px;
+}
+.article p {
+  margin-left: 2.5%;
+  margin-right: 5%;
+}

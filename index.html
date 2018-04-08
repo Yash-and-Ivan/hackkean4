@@ -1,0 +1,92 @@
+<html>
+
+<head>
+  <title> LOCATR </title>
+
+  <link rel="stylesheet" type="text/css" href="vendor/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+  <div id="panel1">
+    <div id = "bgSketch1">
+    </div>
+    <div class="quote">
+      <p> <mark>
+        &nbsp; We have all seen it. &nbsp;<br>  &nbsp; Theres a sea of knowledge, &nbsp; <br> &nbsp; and you are just a small person.   &nbsp;<br> <br>  &nbsp; But we know you are unique,   &nbsp;<br>  &nbsp; and the world is overwhelming.  &nbsp; <br> <br>  &nbsp; Enter <span class="rainbow"> LOCATR </span>,   &nbsp;<br>&nbsp; bringing <span class="rainbow"> YOU </span> information &nbsp;<br>  &nbsp;
+        that <span class="rainbow"> YOU </span> like.   &nbsp;</mark>
+        <p>
+    </div>
+    <div class= "titlePanel">
+      <img src = "img/locatr-logo.png"></img>
+      <p> Created by <code>Ivan Galakhov</code> and <code>Yash Parikh</code> for hackkean IV </p>
+      <button class="button-primary" onClick="goToPanel2()"> Let's Go! </button>
+    </div>
+  </div>
+  <div id="panel2">
+    <div id = "bgSketch2">
+    </div>
+    <h1 id="titlepanel2">About You</h1>
+    <div class="questionArea">
+      <h4 id="questionBody"> Question Title </h4>
+      <hr>
+      <form id="mcForm">
+        <div class="questionChoices">
+          <div class="left-column">
+            <input type="radio" checked="unchecked" name="op" value="0"><span id="op1"></span> </input>
+            <br>
+            <input type="radio" name="op" value="1"><span id="op2"></span></input>
+          </div>
+          <div class="right-column">
+            <input type="radio" name="op" value="2"><span id="op3"></span></input>
+            <br>
+            <input type="radio" name="op" value="3"><span id="op4"></span></input>
+          </div>
+        </div>
+      </form>
+      <button id="questionSubmit" class = "button-primary"> Submit </button>
+    </div>
+
+    <div class="userText">
+      <div class="userPad">
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      </div>
+      <textarea class="userTextArea">
+      </textarea>
+    </div>
+    <center> <h3 id = "agr0"> <span id = "agr1">Tell us about your day! </span><span id = "agr2">Don't forget to check your work!</span></h3></center>
+    <center> <button id ="agr3" class="button-primary"> Ready to see your results? Click here </button> </center>
+  </div>
+  <div id = "panel3">
+    <div id = "bgSketch3">
+    </div>
+  </div>
+  <div id = "panel4">
+    <div class = "resultsPanel">
+      <canvas id="valueChart" width="500px" height="600px"></canvas>
+    </div>
+    <div class = "articlePanel">
+      <br>
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp; You might like... </h2>
+      <button onclick = "populateWithArticles($('#toLike'), liked, 10);"> Shuffle </button>
+      <div id = "toLike"> </div>
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp; You might dislike... </h2>
+      <button onclick = "populateWithArticles($('#toDislike'), disliked, 10);"> Shuffle </button>
+
+      <div id = "toDislike"> </div>
+    </div>
+  </div>
+
+
+  <script src="vendor/jquery.js"></script>
+  <script src="js/questions.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/bgSketch.js"></script>
+
+</body>
+
+</html>

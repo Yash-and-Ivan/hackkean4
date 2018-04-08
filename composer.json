@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "url": "https://github.com/IndicoDataSolutions/IndicoIo-PHP.git",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "indicoio/indicoio-php": "dev-master"
+    }
+}
